@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
 class Status extends StatefulWidget {
-  String name,pathToImage;
-  Status(String name,String pathToImage)
-  {
-    this.name=name;
-    this.pathToImage=pathToImage;
-  }
+  final String name,path;
+  Status({Key key,this.name,this.path}) : super(key:key);
   @override
-  _StatusState createState() => _StatusState(name, pathToImage);
+  _StatusState createState() => _StatusState();
 }
 
 class _StatusState extends State<Status> {
-  String name,pathToImage;
 
-  _StatusState(String name , String pathTomage){
-    this.name=name;
-    this.pathToImage=pathToImage;
-  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -29,7 +21,7 @@ class _StatusState extends State<Status> {
               overflow: Overflow.visible,
               children: <Widget>[
                 new CircleAvatar(
-                  backgroundImage: new ExactAssetImage(pathToImage.toString()),
+                  backgroundImage: new ExactAssetImage(widget.path),
                   radius: 30.0,
 
                 ),
@@ -48,9 +40,9 @@ class _StatusState extends State<Status> {
                 ),
               ],
             ),
-            new Text("$name",textDirection: TextDirection.ltr,
+            new Text(widget.name,textDirection: TextDirection.ltr,
             style: new TextStyle(
-              color: Colors.black12,
+              color: Colors.black38,
               fontWeight: FontWeight.bold
             ),)
           ],

@@ -10,7 +10,7 @@ Some of the screenshots of this Messenger Project:
 
 Some of the screenshots of this Restaurant Project:  
 <img src="https://github.com/atul161/flutter_projects/blob/master/reaturant_ui/screenshots/page1.png" width="200"/>
-<img src="https://github.com/atul161/flutter_projects/blob/master/reaturant_ui/screenshots/page2.png" alt="screenshots" width="200"/>
+<img src="https://github.com/atul161/flutter_projects/blob/master/reaturant_ui/screenshots/page2.jpeg" width="200"/>
 
 # Contribution
 Feel free to add the Ui design built in flutter.
